@@ -1,0 +1,28 @@
+# packages already in base notebook have been commented out
+name: nhsx
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - black
+  - flake8
+  - holoviews=1.15.*
+  - html5lib
+  - isort
+  - jinja2
+  - jupyterlab_code_formatter
+  - lxml
+  - mkdocs
+  - mkdocstrings[python]
+  - nbconvert
+  - nbmake
+  - nbstripout
+  - pre-commit
+  - pydicom
+  - python-dotenv
+  - pip
+  - pip:
+      - jupyter-remote-desktop-proxy
+      - jupyter-matlab-proxy
+      - matlabengine
+      - nibabel # https://nipy.org/nibabel/index.html
