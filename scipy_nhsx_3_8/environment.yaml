@@ -1,0 +1,34 @@
+# packages already in base notebook have been commented out
+name: py38
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - black
+  - flake8
+  - holoviews
+  - html5lib
+  - isort
+  - jinja2
+  - jupyterlab_code_formatter
+  - jupyterlab-git
+  - lxml
+  - mkdocs
+  - mkdocs-material
+  - mkdocstrings
+  - mkdocstrings-python
+  - mkdocstrings[python]
+  - nbconvert
+  - nbmake
+  - nbstripout
+  - pre-commit
+  - pytest-xdist
+  - python-dotenv
+  - python=3.8
+  - pyyaml
+  # - scispacy not in conda
+  - pip
+  - pip:
+      - medcat
+      - negspacy #1.0.3
+      - jupyter-remote-desktop-proxy

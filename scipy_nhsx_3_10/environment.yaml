@@ -1,0 +1,28 @@
+# packages already in base notebook have been commented out
+name: nhsx
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - black
+  - flake8
+  - holoviews=1.15.*
+  - html5lib
+  - isort
+  - jinja2
+  - jupyterlab_code_formatter
+  - lxml
+  - mkdocs
+  - mkdocstrings[python]
+  - nbconvert
+  - nbmake
+  - nbstripout
+  - pre-commit
+  - pytest-xdist
+  - python-dotenv
+  # - scispacy not in conda
+  - pip
+  - pip:
+      - medcat==1.6.0
+      - negspacy #1.0.3
+      - jupyter-remote-desktop-proxy
