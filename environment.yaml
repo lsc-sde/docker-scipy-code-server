@@ -23,6 +23,6 @@ dependencies:
   # - scispacy not in conda
   - pip
   - pip:
-      - medcat==1.6.0
+      - medcat
       - negspacy #1.0.3
       - jupyter-remote-desktop-proxy

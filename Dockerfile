@@ -58,11 +58,11 @@ COPY jupyter_notebook_config.json /etc/jupyter/jupyter_notebook_config.json
 COPY environment.yaml environment.yaml
 
 # Install Python packages for proxying XFCE and code-server
-RUN mamba install -c conda-forge jupyter-server-proxy jupyter-vscode-proxy websockify \
-    && mamba env update --name base --file environment.yaml \
-    && rm environment.yaml \
-    && mamba clean --all -f -y \
-    && fix-permissions "${CONDA_DIR}" \
+RUN mamba install -c conda-forge jupyter-server-proxy jupyter-vscode-proxy websockify
+RUN mamba env update --name base --file environment.yaml
+RUN rm environment.yaml
+RUN mamba clean --all -f -y 
+RUN fix-permissions "${CONDA_DIR}" \
     && fix-permissions "/home/${NB_USER}"
 
 # Switch back to jovyan to avoid accidental container runs as root
